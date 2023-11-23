@@ -1,0 +1,21 @@
+/* calendar body  */
+#weekly > div {
+    box-sizing: border-box;
+    text-align: center;
+    width: calc(100% / 7);
+    height: 130px;
+    display: inline-block;
+    border-bottom: 1px solid #e4e4e4;
+    vertical-align: top;
+    padding: 1%;
+    color: rgb(253, 186, 0);
+    overflow-y: auto;
+  }
+  #weekly > div.active {
+    background: #e4e4e4;
+  }
+  #weekly > div + div{
+    border-left: 1px solid #e4e4e4;
+  }
+  .calendar-body #weekly > div:first-child {border-left: 1px solid #e4e4e4;}
+  .calendar-body #weekly > div:last-child {border-right: 1px solid #e4e4e4;}
